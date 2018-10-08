@@ -1,0 +1,12 @@
+1) CREATE SCHEMA `feedback` ;
+
+2) CREATE TABLE `feedback`.`comment` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `mark` INT NOT NULL,
+  `comment` VARCHAR(300) NULL,
+  `user_left` INT NOT NULL,
+  `user_about` INT NOT NULL,
+  `user_about_role` VARCHAR(20) NOT NULL,
+  `date` DATETIME NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC));
